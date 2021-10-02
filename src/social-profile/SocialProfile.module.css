@@ -1,0 +1,52 @@
+.centred {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  composes: centred;
+  width: 300px;
+  background-color: beige;
+}
+
+.description {
+  composes: flex;
+}
+
+.avatar {
+  display: block;
+  composes: centred;
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  border-radius: 50%;
+}
+
+.bold {
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.info {
+  padding-top: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.item {
+  composes: flex;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: rgba(168, 163, 163, 0.3) solid 1px;
+}
