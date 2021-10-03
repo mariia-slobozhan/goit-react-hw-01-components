@@ -36,7 +36,9 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string,
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
     }),
   ),
 };
